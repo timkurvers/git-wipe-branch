@@ -1,12 +1,14 @@
 #!/usr/bin/env zsh
 
-if [[ ! -n $1 ]]; then
+branch=$1
+
+if [[ ! -n $branch ]]; then
   echo 'usage: git wipe-branch [branch]'
   return 1
 fi
 
-git branch -d $1
-git branch -rd "origin/$1"
-git push origin :$1
+git branch -d $branch
+git branch -rd "origin/$branch"
+git push origin :$branch
 
 return 0
