@@ -6,6 +6,8 @@ Wipe, eradicate, destroy, kill, abolish a git branch. Seriously.
 - Local remote tracking branch
 - Remote branch (on origin)
 
+Licensed under the **MIT** license, see LICENSE for more information.
+
 
 ## Installation
 
