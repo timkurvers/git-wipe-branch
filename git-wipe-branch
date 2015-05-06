@@ -3,12 +3,15 @@
 branch=$1
 
 if [[ ! -n $branch ]]; then
-  echo 'usage: git wipe-branch [branch]'
+  echo 'usage: git wipe-branch [branch] [--remote]'
   return 1
 fi
 
 git branch -d $branch
 git branch -rd "origin/$branch"
-git push origin :$branch
+
+if [[ $2 = '--remote' ]]; then
+  git push origin :$branch
+fi
 
 return 0
