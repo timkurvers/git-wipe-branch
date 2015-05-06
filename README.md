@@ -4,7 +4,7 @@ Wipe, eradicate, destroy, kill, abolish a git branch. Seriously.
 
 - Local branch
 - Local remote tracking branch
-- Remote branch (on origin)
+- Remote branch with `--remote` flag
 
 Licensed under the **MIT** license, see LICENSE for more information.
 
@@ -19,3 +19,7 @@ Add as a bundle through [Antigen](https://github.com/zsh-users/antigen):
 ## Usage
 
     git wipe-branch feature/foobar
+
+To also wipe the remote branch, use the `--remote` flag:
+
+    git wipe-branch feature/foobar --remote
