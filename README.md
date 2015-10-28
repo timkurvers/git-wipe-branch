@@ -8,18 +8,24 @@ Wipe, eradicate, destroy, kill, abolish a git branch. Seriously.
 
 Licensed under the **MIT** license, see LICENSE for more information.
 
-
 ## Installation
 
-Add as a bundle through [Antigen](https://github.com/zsh-users/antigen):
+Add as a bundle through [Antigen]:
 
-    antigen bundle timkurvers/git-wipe-branch
-
+```shell
+antigen bundle timkurvers/git-wipe-branch
+```
 
 ## Usage
 
-    git wipe-branch feature/foobar
+```shell
+git wipe-branch feature/foobar
+```
 
 To also wipe the remote branch, use the `--remote` flag:
 
-    git wipe-branch feature/foobar --remote
+```shell
+git wipe-branch feature/foobar --remote
+```
+
+[Antigen]: https://github.com/zsh-users/antigen
